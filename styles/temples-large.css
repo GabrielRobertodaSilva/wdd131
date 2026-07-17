@@ -1,34 +1,35 @@
 
-#menuButton {
-    display: none;
-}
+@media screen and (min-width: 640px) {
 
+    #menuButton {
+        display: none;
+    }
 
-header {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-}
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
 
-header h1 {
-    margin-bottom: 0;
-}
+    header h1 {
+        margin-bottom: 0;
+    }
 
+    nav {
+        display: flex !important;
+        flex-direction: row;
+        width: auto;
+        margin-top: 0;
+        gap: 1rem;
+    }
 
-nav {
-    display: flex !important; 
-    flex-direction: row;
-    width: auto;
-    margin-top: 0;
-    gap: 1rem;
-}
+    nav a {
+        padding: 0.5rem 1rem;
+    }
 
-nav a {
-    padding: 0.5rem 1rem;
-}
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
-
-.grid-container {
-    grid-template-columns: repeat(3, 1fr);
 }

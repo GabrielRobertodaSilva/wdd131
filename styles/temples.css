@@ -18,7 +18,7 @@ body {
 
 header {
     background-color: #1a365d;
-    color: white;
+    color: #ffffff;
     padding: 1rem;
     position: relative;
     display: flex;
@@ -32,18 +32,16 @@ header h1 {
     margin-bottom: 0.5rem;
 }
 
-
 #menuButton {
     background: none;
     border: none;
-    color: white;
+    color: #ffffff;
     font-size: 2rem;
     cursor: pointer;
     position: absolute;
     right: 1.5rem;
     top: 1rem;
 }
-
 
 nav {
     display: none;
@@ -52,13 +50,12 @@ nav {
     margin-top: 1rem;
 }
 
-
 nav.open {
     display: flex;
 }
 
 nav a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     padding: 0.8rem;
     text-align: center;
@@ -70,9 +67,7 @@ nav a:hover, nav a.active {
     background-color: #1e40af;
     color: #ffffff;
     border-radius: 4px;
-
 }
-
 
 main {
     flex: 1;
@@ -89,7 +84,6 @@ main h2 {
     color: #1a365d;
 }
 
-
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -97,7 +91,7 @@ main h2 {
 }
 
 figure {
-    background-color: white;
+    background-color: #ffffff;
     border: 1px solid #e2e8f0;
     border-radius: 8px;
     overflow: hidden;
@@ -122,7 +116,6 @@ figcaption {
     background-color: #edf2f7;
     color: #2d3748;
 }
-
 
 footer {
     background-color: #1a365d;
