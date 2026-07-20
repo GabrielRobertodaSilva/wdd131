@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florianópolis - WDD130</title>
+    <meta name="description" content="Explore essential dynamic facts, key demographics, and weather statistics about the city of Florianopolis for the WDD130 final project.">
+    <meta name="author" content="Gabriel Roberto da Silva">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css" media="(min-width: 768px)">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Florianópolis</h1>
+    </header>
+
+ 
+    <main class="hero-wrapper">
+        <picture class="hero-container">
+            <source srcset="images/hero-large.webp" media="(min-width: 768px)" type="image/webp">
+            <img src="images/hero-small.webp" alt="Paisagem de Florianópolis" class="hero-img">
+        </picture>
+
+      
+        <section class="card-box data-box">
+            <h2>Data</h2>
+            <ul>
+                <li><span>Area:</span> <span>436,5 km²</span></li>
+                <li><span>Population:</span> <span>537.000</span></li>
+                <li><span>Capital:</span> <span>Florianópolis</span></li>
+                <li><span>Language:</span> <span>Português</span></li>
+                <li><span>Coin:</span> <span>Real</span></li>
+            </ul>
+        </section>
+
+        
+        <section class="card-box weather-box">
+            <h2 class="weather-heading">Weather</h2>
+            
+            
+            <div class="weather-icon-mobile">
+                <img src="images/weather-icon.svg" alt="Weather icon" width="40">
+            </div>
+            
+            <ul class="weather-data">
+                <li><span>Temperature:</span> <span><span id="temp">9</span>°C</span></li>
+                <li><span>Conditions:</span> <span>Partly Cloudy</span></li>
+                <li><span>Wind:</span> <span><span id="wind">12</span> km/h</span></li>
+                <li><span>Wind Chill:</span> <span><span id="windchill"></span></span></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌵 Gabriel Roberto da Silva 🌵 Florianópolis</p>
+        <p>Last Modified: <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>
