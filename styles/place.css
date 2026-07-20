@@ -1,9 +1,11 @@
+
 :root {
-    --primary-color: #004b23; 
-    --accent-bg: #007200;    
+    --primary-color: #004b23;
+    --accent-bg: #007200;
     --text-color: #333333;
     --bg-color: #f4f9f4;
     --card-bg: rgba(255, 255, 255, 0.95);
+    --border-color: #cccccc;
     --font-family: Arial, sans-serif;
 }
 
@@ -19,9 +21,10 @@ body {
     color: var(--text-color);
 }
 
+
 header {
     background-color: var(--primary-color);
-    color: white;
+    color: #ffffff;
     text-align: center;
     padding: 1rem;
 }
@@ -29,6 +32,15 @@ header {
 header h1 {
     font-size: 2rem;
 }
+
+footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.85rem;
+}
+
 
 .hero-wrapper {
     display: flex;
@@ -42,17 +54,16 @@ header h1 {
     object-fit: cover;
 }
 
-
 .card-box {
     background-color: var(--card-bg);
     margin: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color);
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .card-box h2 {
     background-color: var(--accent-bg);
-    color: white;
+    color: #ffffff;
     padding: 0.5rem 1rem;
     font-size: 1.2rem;
 }
@@ -66,7 +77,7 @@ header h1 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 0.5rem;
-    border-bottom: 1px dashed #ddd;
+    border-bottom: 1px dashed var(--border-color);
     padding-bottom: 0.2rem;
 }
 
@@ -75,10 +86,46 @@ header h1 {
     margin-top: 0.5rem;
 }
 
-footer {
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    font-size: 0.85rem;
+
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    .hero-wrapper {
+        position: relative;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .hero-img {
+        height: 450px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .card-box {
+        position: absolute;
+        width: 280px;
+        margin: 0;
+    }
+
+    .data-box {
+        top: 40px;
+        left: 40px;
+    }
+
+    .weather-box {
+        bottom: 40px;
+        right: 40px;
+    }
+
+    .weather-icon-mobile {
+        display: none;
+    }
+
+    .weather-heading::after {
+        content: " ⛅";
+        font-size: 1.3rem;
+    }
 }
