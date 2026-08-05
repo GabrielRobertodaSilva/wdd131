@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main class="confirmation-container">
+        <h2>Thank You for Your Review!</h2>
+        <p>Your review has been successfully submitted and recorded.</p>
+        
+        <div class="form-item counter-box" style="text-align: center; background: #e9ecef; padding: 20px; border-radius: 6px; margin: 20px 0;">
+            <p>Total de avaliações enviadas:</p>
+            <h3 id="review-count" style="margin: 5px 0; color: var(--primary-color);">0</h3>
+        </div>
+
+        <div class="form-item" style="text-align: center;">
+            <a href="form.html" class="btn-back" style="display: inline-block; background-color: var(--primary-color); color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: bold;">Submit Another Review</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | 🌵 Gabriel Roberto da Silva 🌵  | Santa Catarina</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        
+        let reviewCount = Number(localStorage.getItem("reviewCount-ls")) || 0;
+        reviewCount++;
+        localStorage.setItem("reviewCount-ls", reviewCount);
+
+    
+        document.getElementById("review-count").textContent = reviewCount;
+    </script>
+</body>
+</html>
