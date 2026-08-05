@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Review confirmation page for submitted product evaluations.">
+    <meta name="author" content="Gabriel Roberto da Silva">
     <title>Review Confirmation</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/scripts.js" defer></script>
 </head>
 <body>
     <header>
@@ -27,7 +29,7 @@
     </main>
 
     <footer>
-        <p>&copy; <span id="currentyear"></span> | 🌵 Gabriel Roberto da Silva 🌵  | Santa Catarina</p>
+        <p>&copy; <span id="currentyear"></span> |  🌵 Gabriel Roberto da Silva 🌵| Santa Catarina</p>
         <p id="lastModified"></p>
     </footer>
 
@@ -37,8 +39,11 @@
         reviewCount++;
         localStorage.setItem("reviewCount-ls", reviewCount);
 
-    
-        document.getElementById("review-count").textContent = reviewCount;
+        
+        const countDisplay = document.getElementById("review-count");
+        if (countDisplay) {
+            countDisplay.textContent = reviewCount;
+        }
     </script>
 </body>
 </html>

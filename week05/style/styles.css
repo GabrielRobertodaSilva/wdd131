@@ -15,11 +15,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 
 header, footer {
     text-align: center;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 main {
@@ -29,6 +32,7 @@ main {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 600px;
+    box-sizing: border-box;
 }
 
 .form-item {
@@ -77,9 +81,15 @@ legend {
     align-items: center;
 }
 
-.rating-stars label {
+.rating-stars label, .checkbox-group label {
     font-weight: normal;
     cursor: pointer;
+}
+
+.rating-stars div, .checkbox-group div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 input[type="submit"] {
@@ -91,8 +101,41 @@ input[type="submit"] {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 100%;
 }
 
 input[type="submit"]:hover {
     background-color: #004085;
+}
+
+.confirmation-container {
+    text-align: center;
+}
+
+.counter-box {
+    background: #e9ecef;
+    padding: 1rem;
+    border-radius: 6px;
+    margin: 1.5rem 0;
+}
+
+.btn-back {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.btn-back:hover {
+    background-color: #004085;
+}
+
+@media (min-width: 600px) {
+    .rating-stars {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }

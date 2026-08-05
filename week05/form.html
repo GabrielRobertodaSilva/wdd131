@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product review form page for submitting feedback and ratings on items.">
+    <meta name="author" content="Gabriel Roberto da Silva">
     <title>Product Review Form</title>
     <link rel="stylesheet" href="style/styles.css">
-    <script src="scripts.js" defer></script>
+    <script src="scripts/scripts.js" defer></script>
 </head>
 <body>
     <header>
@@ -19,52 +21,72 @@
                 <label for="productName">Product Name <span class="required">*</span></label>
                 <select id="productName" name="productName" required>
                     <option value="" disabled selected>Select a Product ...</option>
-                    
                 </select>
             </div>
 
-            
             <fieldset class="form-item">
                 <legend>Overall Rating <span class="required">*</span></legend>
                 <div class="rating-stars">
-                    <label><input type="radio" name="rating" value="1" required> &star;</label>
-                    <label><input type="radio" name="rating" value="2" required> &star;&star;</label>
-                    <label><input type="radio" name="rating" value="3" required> &star;&star;&star;</label>
-                    <label><input type="radio" name="rating" value="4" required> &star;&star;&star;&star;</label>
-                    <label><input type="radio" name="rating" value="5" required> &star;&star;&star;&star;&star;</label>
+                    <div>
+                        <input type="radio" name="rating" id="star1" value="1" required>
+                        <label for="star1">&star;</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="rating" id="star2" value="2" required>
+                        <label for="star2">&star;&star;</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="rating" id="star3" value="3" required>
+                        <label for="star3">&star;&star;&star;</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="rating" id="star4" value="4" required>
+                        <label for="star4">&star;&star;&star;&star;</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="rating" id="star5" value="5" required>
+                        <label for="star5">&star;&star;&star;&star;&star;</label>
+                    </div>
                 </div>
             </fieldset>
 
-            
             <div class="form-item">
                 <label for="installDate">Date of Installation <span class="required">*</span></label>
                 <input type="date" id="installDate" name="installDate" required>
             </div>
 
-            
             <fieldset class="form-item">
                 <legend>Which features were useful in your product? (Check all that apply)</legend>
                 <div class="checkbox-group">
-                    <label><input type="checkbox" name="features" value="durability"> Durability</label>
-                    <label><input type="checkbox" name="features" value="ease"> Ease of Use</label>
-                    <label><input type="checkbox" name="features" value="performance"> Performance</label>
-                    <label><input type="checkbox" name="features" value="design"> Design</label>
+                    <div>
+                        <input type="checkbox" name="features" id="durability" value="durability">
+                        <label for="durability">Durability</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="features" id="ease" value="ease">
+                        <label for="ease">Ease of Use</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="features" id="performance" value="performance">
+                        <label for="performance">Performance</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="features" id="design" value="design">
+                        <label for="design">Design</label>
+                    </div>
                 </div>
             </fieldset>
 
-            
             <div class="form-item">
                 <label for="writtenReview">Written Review (Optional)</label>
                 <textarea id="writtenReview" name="writtenReview" rows="4"></textarea>
             </div>
 
-            
             <div class="form-item">
                 <label for="userName">Your Name (Optional)</label>
                 <input type="text" id="userName" name="userName">
             </div>
 
-            
             <div class="form-item">
                 <input type="submit" value="Post Review">
             </div>
@@ -72,7 +94,7 @@
     </main>
 
     <footer>
-        <p>&copy; <span id="currentyear"></span> | 🌵 Gabriel Roberto da Silva 🌵 | Santa Catarina</p>
+        <p>&copy; <span id="currentyear"></span> |  🌵 Gabriel Roberto da Silva 🌵| Santa Catarina</p>
         <p id="lastModified"></p>
     </footer>
 </body>

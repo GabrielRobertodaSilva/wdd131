@@ -1,4 +1,3 @@
-
 const products = [
   {
     id: "fc-1888",
@@ -27,7 +26,6 @@ const products = [
   }
 ];
 
-
 document.addEventListener("DOMContentLoaded", () => {
   const selectElement = document.getElementById("productName");
 
@@ -39,7 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
       selectElement.appendChild(option);
     });
   }
-
   
   const yearSpan = document.getElementById("currentyear");
   const lastMod = document.getElementById("lastModified");
