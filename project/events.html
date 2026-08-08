@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiu Jitsu Club - Events & Contact</title>
+    <meta name="description" content="Check upcoming Jiu-Jitsu competitions, register for events, and contact the Jiu Jitsu Club community.">
+    <meta name="author" content="Gabriel Roberto da Silva">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="styles/project.css">
+
+    
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">Jiu Jitsu <span>Club</span></a>
+            </div>
+            <button id="menu-toggle" aria-label="Open Navigation Menu">&#9776;</button>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="belts.html">Belts</a></li>
+                    <li><a href="events.html" class="active">Events & Form</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="page-header-section">
+            <h1>Tournaments & Member Registration</h1>
+            <p>Stay updated on regional competitions and join our community directory.</p>
+        </section>
+
+        
+        <div class="container-grid-form">
+            <section class="events-list">
+                <h2>Upcoming Competitions</h2>
+                <ul class="event-items">
+                    <li><strong>State Championship 2026</strong> - Date: October 15, 2026</li>
+                    <li><strong>Open Mat Gathering</strong> - Date: November 05, 2026</li>
+                    <li><strong>National Sub-Only Tournament</strong> - Date: December 10, 2026</li>
+                </ul>
+            </section>
+
+            <section class="form-section">
+                <h2>Practitioner Registration Form</h2>
+                <form id="membership-form" class="styled-form">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="belt-level">Current Belt Level:</label>
+                    <select id="belt-level" name="beltLevel" required>
+                        <option value="">Select your belt</option>
+                        <option value="White">White Belt</option>
+                        <option value="Blue">Blue Belt</option>
+                        <option value="Purple">Purple Belt</option>
+                        <option value="Brown">Brown Belt</option>
+                        <option value="Black">Black Belt</option>
+                    </select>
+
+                    <button type="submit" class="cta-button">Register Profile</button>
+                </form>
+                <div id="form-message" class="success-message"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; <span id="currentyear"></span> | Gabriel Roberto da Silva | WDD 131 Project</p>
+            <p><a href="references.html" target="_blank">References Page</a></p>
+        </div>
+    </footer>
+</body>
+</html>

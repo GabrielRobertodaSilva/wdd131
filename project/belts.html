@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiu Jitsu Club - Belt Progression</title>
+    <meta name="description" content="Learn about the Brazilian Jiu-Jitsu belt ranking system, requirements, and progression from white to black belt.">
+    <meta name="author" content="Gabriel Roberto da Silva">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="styles/project.css">
+
+    
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">Jiu Jitsu <span>Club</span></a>
+            </div>
+            <button id="menu-toggle" aria-label="Open Navigation Menu">&#9776;</button>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="belts.html" class="active">Belts</a></li>
+                    <li><a href="events.html">Events & Form</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="page-header-section">
+            <h1>Belt Progression System</h1>
+            <p>Understand the path, dedication, and time required to advance through the ranks in Brazilian Jiu-Jitsu.</p>
+        </section>
+
+        
+        <section class="belt-section">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Belts</button>
+                <button class="filter-btn" data-filter="adult">Adult Belts</button>
+                <button class="filter-btn" data-filter="kids">Kids Belts</button>
+            </div>
+
+            <div id="belts-container" class="belts-grid">
+                
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; <span id="currentyear"></span> | Gabriel Roberto da Silva | WDD 131 Project</p>
+            <p><a href="references.html" target="_blank">References Page</a></p>
+        </div>
+    </footer>
+</body>
+</html>
